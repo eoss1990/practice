@@ -12,15 +12,24 @@ import java.io.PrintWriter;
  */
 public class Test {
 
+    /**
+     * 可以输出该class字节码
+     * @param args
+     * @throws IOException
+     */
     public static void main(String[] args) throws IOException {
         ClassReader cr = new ClassReader("bean.People");
         TraceClassVisitor cv = new TraceClassVisitor(new PrintWriter("/Users/yangyu/Downloads/write"));
         cr.accept(cv,0);
     }
 
+    /**
+     * 可以输出如何通过ASM构建该Class
+     * @throws Exception
+     */
     @org.junit.Test
     public void testASMifier() throws Exception {
-        String[] strings = {"bean.People1"};
+        String[] strings = {"bean.People"};
         ASMifier.main(strings);
     }
 }

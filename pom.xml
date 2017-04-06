@@ -69,6 +69,7 @@
             <version>2.5</version>
         </dependency>
 
+        <!--各种util-->
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
@@ -82,24 +83,32 @@
             <version>1.1</version>
         </dependency>
 
+        <!--日志-->
         <dependency>
             <groupId>commons-logging</groupId>
             <artifactId>commons-logging</artifactId>
             <version>1.2</version>
         </dependency>
 
+        <!--网络传输-->
         <dependency>
             <groupId>commons-net</groupId>
             <artifactId>commons-net</artifactId>
             <version>3.6</version>
         </dependency>
-
         <dependency>
             <groupId>commons-net-3.6-examples</groupId>
             <artifactId>commons-net-3.6-examples</artifactId>
             <version>3.6</version>
             <scope>system</scope>
             <systemPath>${basedir}/lib/commons-net-3.6-examples.jar</systemPath>
+        </dependency>
+
+        <!--String操作-->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-text</artifactId>
+            <version>1.0</version>
         </dependency>
     </dependencies>
 
